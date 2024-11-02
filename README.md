@@ -49,3 +49,111 @@ During the 1980s, several thrash and death metal bands formed a prototype for bl
 - The compiler to use is ocamlopt. When you are required to turn in a function, you must also include anything necessary to compile a full executable. That executable should display some tests that prove that you've done the exercise correctly.
 - Remember that the special token ";;" is only used to end an expression in the interpreter. Thus, it must never appear in any file you turn in. Regardless, the interpreter is a powerful ally, learn to use it at its best as soon as possible!
 - No coding style is enforced during the OCaml piscine. You can use any style you like, no restrictions. Keep in mind that a code your peer-evaluator can't read is a code they can't grade.
+
+## Day-Specific Rules
+For this day, you must follow directions and outputs precisely. A single character mismatch means that the exercise is incorrect, although you are still free to format these outputs as you wish. For instance, the first exercise of the day expects the words "positive" or "negative," each followed by a new line.
+
+Example of correct output:
+```bash
+$> ocamlopt ft_test_sign.ml
+$> ./a.out
+positive
+positive
+negative
+$>
+```
+
+Also correct:
+```bash
+$> ocamlopt ft_test_sign.ml
+$> ./a.out
+Test with [42]: positive
+Test with [0]: positive
+Test with [-42]: negative
+$>
+```
+
+WRONG output:
+```bash
+$> ocamlopt ft_test_sign.ml
+$> ./a.out
+positive positive negative
+$>
+```
+
+Also WRONG:
+```bash
+$> ocamlopt ft_test_sign.ml
+$> ./a.out
+Test with [42]: [positive]
+Test with [0]: [positive]
+Test with [-42]: [negative]
+$>
+```
+
+## Exercise 00: ft_test_sign
+- Turn-in directory: `ex00/`
+- Files to turn in: `ft_test_sign.ml`
+- Allowed functions: `print_endline`
+
+Write a function `ft_test_sign` of type `int -> unit` that displays "positive" or "negative", each followed by a new line, depending on the sign of the parameter. The value 0 is always considered positive.
+
+Examples in the interpreter:
+```ocaml
+# ft_test_sign 42;;
+positive
+- : unit = ()
+# ft_test_sign 0;;
+positive
+- : unit = ()
+# ft_test_sign (-42);;
+negative
+- : unit = ()
+#
+```
+
+Be sure to provide a test suite to demonstrate that your function works as intended during peer evaluation.
+
+## Exercise 01: ft_countdown
+- Turn-in directory: `ex01/`
+- Files to turn in: `ft_countdown.ml`
+- Allowed functions: `print_int` and `print_char`
+
+Write a function `ft_countdown` of type `int -> unit` that displays a countdown from the parameter's value down to 0, with a new line after each value. If the value is negative, display only 0 followed by a new line.
+
+Examples in the interpreter:
+```ocaml
+# ft_countdown 3;;
+3
+2
+1
+0
+- : unit = ()
+# ft_countdown 0;;
+0
+- : unit = ()
+# ft_countdown (-1);;
+0
+- : unit = ()
+#
+```
+
+Be sure to provide a test suite to demonstrate that your function works as intended during peer evaluation.
+
+## Exercise 02: ft_power
+- Turn-in directory: `ex02/`
+- Files to turn in: `ft_power.ml`
+- Allowed functions: Nothing
+
+Write a function `ft_power` of type `int -> int -> int` that returns the first parameter raised to the power of the second parameter. Both parameters will always be positive or equal to 0, but they will never both be 0 at the same time.
+
+Examples in the interpreter:
+```ocaml
+# ft_power 2 4;;
+- : int = 16
+# ft_power 3 0;;
+- : int = 1
+# ft_power 0 5;;
+- : int = 0
+#
+```
