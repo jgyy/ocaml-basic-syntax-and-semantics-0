@@ -236,3 +236,75 @@ val is_digit : char -> bool = <fun>
 ```
 
 *This exercise is not mandatory.*
+
+## Exercise 07: ft_is_palindrome
+- Turn-in directory: `ex07/`
+- Files to turn in: `ft_is_palindrome.ml`
+- Allowed functions: `String.get` and `String.length`
+
+Write a function `ft_is_palindrome` of type `string -> bool` that returns true if the string parameter is a palindrome character by character, false otherwise. If you intend to use your previous function `ft_string_all`, please embed its code in the file `ft_is_palindrome.ml` as well. The empty string is a palindrome.
+
+Examples in the interpreter:
+```ocaml
+# ft_is_palindrome "radar";;
+- : bool = true
+# ft_is_palindrome "madam";;
+- : bool = true
+# ft_is_palindrome "car";;
+- : bool = false
+# ft_is_palindrome "";;
+- : bool = true
+```
+
+*This exercise is not mandatory.*
+
+## Exercise 08: ft_rot_n
+- Turn-in directory: `ex08/`
+- Files to turn in: `ft_rot_n.ml`
+- Allowed functions: `char_of_int`, `int_of_char` and `String.map`
+
+Write a function `ft_rot_n` of type `int -> string -> string`. Let n be the first parameter and str be the second parameter. The function `ft_rot_n` rotates each lowercase and uppercase alphabetical character of str by n in ascending order. The value n will always be positive.
+
+Examples in the interpreter:
+```ocaml
+# ft_rot_n 1 "abcdefghijklmnopqrstuvwxyz";;
+- : string = "bcdefghijklmnopqrstuvwxyza"
+# ft_rot_n 13 "abcdefghijklmnopqrstuvwxyz";;
+- : string = "nopqrstuvwxyzabcdefghijklm"
+# ft_rot_n 42 "0123456789";;
+- : string = "0123456789"
+# ft_rot_n 2 "OI2EAS67B9";;
+- : string = "QK2GCU67D9"
+# ft_rot_n 0 "Damned !";;
+- : string = "Damned !"
+# ft_rot_n 42 "";;
+- : string = ""
+# ft_rot_n 1 "NBzlk qnbjr !";;
+- : string = "OCaml rocks !"
+```
+
+*This exercise is not mandatory.*
+
+## Exercise 09: ft_print_comb2
+- Turn-in directory: `ex09/`
+- Files to turn in: `ft_print_comb2.ml`
+- Allowed functions: `print_char`, `print_int`
+
+Write a function `ft_print_comb2` of type `unit -> unit` that displays each unique combination of two numbers, each one between 00 and 99, in ascending order. Each combination is separated from the next one by a comma and a space. Finish your display with a new line.
+
+Example output:
+```ocaml
+# ft_print_comb2 ();;
+00 01, 00 02, 00 03, 00 04, 00 05, <more numbers>, 00 99, 01 02, <more numbers>, 97 99, 98 99
+- : unit = ()
+#
+```
+
+Note: Displaying the right answer in a big string without actually computing it will be treated as cheating during the peer evaluation.
+
+*This exercise is not mandatory.*
+
+## Submission and Peer Evaluation
+Turn in your assignment in your Git repository as usual. Only the work inside your repository will be evaluated during the defense. Don't hesitate to double-check the names of your folders and files to ensure they are correct.
+
+> The evaluation process will happen on the computer of the evaluated group.
