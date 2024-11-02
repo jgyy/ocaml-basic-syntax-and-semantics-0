@@ -1,0 +1,2 @@
+String.get
+String.length

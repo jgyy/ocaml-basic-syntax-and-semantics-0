@@ -1,0 +1,2 @@
+print_char
+print_int
