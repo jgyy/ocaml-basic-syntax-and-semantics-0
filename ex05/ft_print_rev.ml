@@ -9,8 +9,10 @@ let ft_print_rev str =
   print_reverse_helper (len - 1);
   print_char '\n'
 
+(*
 let () =
   ft_print_rev "Hello world !";
   ft_print_rev "";
   ft_print_rev "42";
   ft_print_rev "ocaml"
+*)

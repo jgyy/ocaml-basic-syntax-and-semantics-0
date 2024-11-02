@@ -7,4 +7,6 @@ let ft_print_alphabet () =
   print_char_range 'a' 'z';
   print_char '\n'
 
+(*
 let () = ft_print_alphabet ()
+*)

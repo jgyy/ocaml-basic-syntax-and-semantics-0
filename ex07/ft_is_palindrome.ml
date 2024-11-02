@@ -8,6 +8,7 @@ let ft_is_palindrome str =
   if len <= 1 then true
   else is_palindrome_helper str 0 (len - 1)
 
+(*
 let test_palindrome str =
   print_string ("Testing \"" ^ str ^ "\": ");
   print_string (if ft_is_palindrome str then "true" else "false");
@@ -21,3 +22,4 @@ let () =
   test_palindrome "a";
   test_palindrome "hannah";
   test_palindrome "hello"
+*)

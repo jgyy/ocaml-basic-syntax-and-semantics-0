@@ -3,6 +3,7 @@ let rec ft_power x n =
   else if x = 0 then 0 
   else x * ft_power x (n - 1)
 
+(*
 let () =
   let test x n =
     Printf.printf "ft_power %d %d = %d\n" x n (ft_power x n)
@@ -12,3 +13,4 @@ let () =
   test 0 5;
   test 5 2;
   test 3 3
+*)

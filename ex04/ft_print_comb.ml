@@ -24,5 +24,7 @@ let ft_print_comb () =
   in
   print_nums 0 1 2
 
+(*
 let () = 
   ft_print_comb ()
+*)

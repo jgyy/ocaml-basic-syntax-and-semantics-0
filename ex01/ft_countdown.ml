@@ -11,6 +11,7 @@ let rec ft_countdown n =
       if n > 0 then ft_countdown (n - 1)
     end
 
+(*
 let () = 
   print_string "Test with 3:\n";
   ft_countdown 3;
@@ -18,3 +19,4 @@ let () =
   ft_countdown 0;
   print_string "Test with -1:\n";
   ft_countdown (-1)
+*)

@@ -7,6 +7,7 @@ let ft_string_all pred str =
   in
   check_all 0
 
+(*
 let main () =
   let is_digit c = c >= '0' && c <= '9' in
   print_string "Test with \"0123456789\": ";
@@ -23,3 +24,4 @@ let main () =
   print_endline (string_of_bool (ft_string_all is_alpha "Hello123"))
 
 let () = main ()
+*)

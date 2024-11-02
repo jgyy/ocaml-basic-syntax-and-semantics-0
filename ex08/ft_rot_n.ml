@@ -13,6 +13,7 @@ let rotate_char n c =
 let ft_rot_n n str = 
   String.map (rotate_char n) str
 
+(*
 let () =
   print_endline (ft_rot_n 1 "abcdefghijklmnopqrstuvwxyz");
   print_endline (ft_rot_n 13 "abcdefghijklmnopqrstuvwxyz");
@@ -21,3 +22,4 @@ let () =
   print_endline (ft_rot_n 0 "Damned !");
   print_endline (ft_rot_n 42 "");
   print_endline (ft_rot_n 1 "NBzlk qnbjr !")
+*)

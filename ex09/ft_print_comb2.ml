@@ -25,5 +25,7 @@ let rec ft_print_comb2 () =
   print_combinations 0 1;
   print_char '\n'
 
+(*
 let () = 
   ft_print_comb2 ()
+*)
